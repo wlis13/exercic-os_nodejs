@@ -1,5 +1,5 @@
 const readLine = require('readline-sync');
-const maxAndMin = require('../data');
+const maxAndMin = require('../util/data01');
 
 const infoUser = () => {
   const weight = readLine.questionFloat('What your weight?:');
