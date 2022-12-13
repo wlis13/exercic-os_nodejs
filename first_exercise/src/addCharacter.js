@@ -11,6 +11,6 @@ const newCharacter = async (newValue) => {
 };
 
 newCharacter({
-  id: "?",
-  name: "??????????"
+  id: "5",
+  name: "Wlisses Fernando"
 });
