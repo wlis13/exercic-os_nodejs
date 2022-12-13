@@ -7,7 +7,7 @@ const replace = async (newValue) => {
   const jsonCharacter = JSON.parse(characters);
   const removeValues = jsonCharacter.filter((iten) => iten.id !== '5');
   const newValues = [...removeValues, newValue];
-  console.log(newValues);
-  // await fs.writeFile(path.resolve(__dirname, FILE));
+
+  await fs.writeFile(path.resolve(__dirname, FILE), JSON.stringify(newValues));
 };
-replace({ id: "5", name: "Marge Simpson" });
+replace({ id: "5", name: "Frederico" });
